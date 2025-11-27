@@ -1,0 +1,342 @@
+@Metadata.layer: #CORE
+@UI.headerInfo : {
+typeName: 'Purchase Register',
+typeNamePlural: 'Purchase Register'
+}
+annotate entity ZCE_PUR_REG2 with
+{
+  @UI.facet: [
+    {
+    id: 'Header',
+    purpose: #STANDARD,
+    type: #IDENTIFICATION_REFERENCE,
+    label: 'Purchase Register',
+    position: 10
+    }
+    ]
+
+    //@UI.selectionField: [{ position: 10 }]
+  @UI.lineItem: [{ position: 10 }]
+@UI.identification: [{ position: 10 }]
+@EndUserText.label: 'Fiscal Year'
+FiscalYear;
+
+@UI.lineItem: [{ position: 20 }]
+@UI.identification: [{ position: 20 }]
+@EndUserText.label: 'Posting Date'
+PostingDate;
+
+@UI.lineItem: [{ position: 30 }]
+@UI.identification: [{ position: 30 }]
+@EndUserText.label: 'Document Date'
+DocumentDate;
+
+@UI.lineItem: [{ position: 40 }]
+@UI.identification: [{ position: 40 }]
+@EndUserText.label: 'Plant'
+Plant;
+
+@UI.lineItem: [{ position: 50 }]
+@UI.identification: [{ position: 50 }]
+@EndUserText.label: 'Plant GSTIN'
+plantgstin;
+
+@UI.lineItem: [{ position: 60 }]
+@UI.identification: [{ position: 60 }]
+@EndUserText.label: 'Accounting Doc'
+ad;
+
+@UI.selectionField: [{ position: 10 }]
+@UI.lineItem: [{ position: 70 }]
+@UI.identification: [{ position: 70 }]
+@EndUserText.label: 'Supplier Inv. No.'
+SupplierInvoice;
+
+@UI.selectionField: [{ position: 20 }]
+@UI.lineItem: [{ position: 80 }]
+@UI.identification: [{ position: 80 }]
+@EndUserText.label: 'Supplier Invoice Item'
+SupplierInvoiceItem;
+
+@UI.lineItem: [{ position: 90 }]
+@UI.identification: [{ position: 90 }]
+@EndUserText.label: 'Reference'
+SupplierInvoiceIDByInvcgParty;
+
+@UI.lineItem: [{ position: 100 }]
+@UI.identification: [{ position: 100 }]
+@EndUserText.label: 'Supplier No.'
+InvoicingParty;
+
+@UI.lineItem: [{ position: 110 }]
+@UI.identification: [{ position: 110 }]
+@EndUserText.label: 'Supplier Name'
+fullname;
+
+@UI.lineItem: [{ position: 120 }]
+@UI.identification: [{ position: 120 }]
+@EndUserText.label: 'Total Invoice Amount(INR)'
+InvoiceGrossAmount;
+
+@UI.lineItem: [{ position: 130 }]
+@UI.identification: [{ position: 130 }]
+@EndUserText.label: 'Supplier City'
+CityName;
+
+@UI.lineItem: [{ position: 140 }]
+@UI.identification: [{ position: 140 }]
+@EndUserText.label: 'GSTIN No.'
+BPTaxNumber;
+
+@UI.lineItem: [{ position: 150 }]
+@UI.identification: [{ position: 150 }]
+@EndUserText.label: 'Supplier PAN'
+suppan;
+
+@UI.lineItem: [{ position: 160 }]
+@UI.identification: [{ position: 160 }]
+@EndUserText.label: 'MSME Number'
+msme;
+
+@UI.lineItem: [{ position: 170 }]
+@UI.identification: [{ position: 170 }]
+@EndUserText.label: 'Document Currency'
+DocumentCurrency;
+
+@UI.lineItem: [{ position: 180 }]
+@UI.identification: [{ position: 180 }]
+@EndUserText.label: 'PO type'
+PurchaseOrderType;
+
+@UI.lineItem: [{ position: 190 }]
+@UI.identification: [{ position: 190 }]
+@EndUserText.label: 'Purchase Order'
+PurchaseOrder;
+
+@UI.lineItem: [{ position: 200 }]
+@UI.identification: [{ position: 200 }]
+@EndUserText.label: 'Purchase Order Item'
+PurchaseOrderItem;
+
+@UI.lineItem: [{ position: 210 }]
+@UI.identification: [{ position: 210 }]
+@EndUserText.label: 'Material'
+PurchaseOrderItemMaterial;
+
+@UI.lineItem: [{ position: 220 }]
+@UI.identification: [{ position: 220 }]
+@EndUserText.label: 'Mat Description'
+PurchaseOrderItemText;
+
+@UI.lineItem: [{ position: 230 }]
+@UI.identification: [{ position: 230 }]
+@EndUserText.label: 'PO Quantity'
+QuantityInPurchaseOrderUnit;
+
+@UI.lineItem: [{ position: 240 }]
+@UI.identification: [{ position: 240 }]
+@EndUserText.label: 'Quantity Unit'
+PurchaseOrderQuantityUnit;
+
+@UI.lineItem: [{ position: 250 }]
+@UI.identification: [{ position: 250 }]
+@EndUserText.label: 'Product Type'
+ProductType;
+
+@UI.lineItem: [{ position: 260 }]
+@UI.identification: [{ position: 260 }]
+@EndUserText.label: 'Product Type Description'
+Name;
+
+@UI.lineItem: [{ position: 270 }]
+@UI.identification: [{ position: 270 }]
+@EndUserText.label: 'Freight Charges(Net)'
+locfcharge;
+
+@UI.lineItem: [{ position: 280 }]
+@UI.identification: [{ position: 280 }]
+@EndUserText.label: 'Packing Charges'
+parkcharge;
+
+@UI.lineItem: [{ position: 290 }]
+@UI.identification: [{ position: 290 }]
+@EndUserText.label: 'CHA Charges'
+chacharge;
+
+@UI.lineItem: [{ position: 300 }]
+@UI.identification: [{ position: 300 }]
+@EndUserText.label: 'Tax Code'
+TaxCode;
+
+@UI.lineItem: [{ position: 310 }]
+@UI.identification: [{ position: 310 }]
+@EndUserText.label: 'Tax code name'
+TaxCodeName;
+
+@UI.lineItem: [{ position: 320 }]
+@UI.identification: [{ position: 320 }]
+@EndUserText.label: 'Exchange Rate'
+ExchangeRate;
+
+@UI.lineItem: [{ position: 330 }]
+@UI.identification: [{ position: 330 }]
+@EndUserText.label: 'Net Amt(INR)'
+SupplierInvoiceItemAmount;
+
+@UI.lineItem: [{ position: 340 }]
+@UI.identification: [{ position: 340 }]
+@EndUserText.label: 'IGST Rate'
+igstrate;
+
+@UI.lineItem: [{ position: 350 }]
+@UI.identification: [{ position: 350 }]
+@EndUserText.label: 'CGST Rate'
+cgstrate;
+
+@UI.lineItem: [{ position: 360 }]
+@UI.identification: [{ position: 360 }]
+@EndUserText.label: 'SGST Rate'
+sgstrate;
+
+@UI.lineItem: [{ position: 370 }]
+@UI.identification: [{ position: 370 }]
+@EndUserText.label: 'UGST Rate'
+ugstrate;
+
+@UI.lineItem: [{ position: 380 }]
+@UI.identification: [{ position: 380 }]
+@EndUserText.label: 'RCM IGST Rate'
+rcmigstrate;
+
+@UI.lineItem: [{ position: 390 }]
+@UI.identification: [{ position: 390 }]
+@EndUserText.label: 'RCM CGST Rate'
+rcmcgstrate;
+
+@UI.lineItem: [{ position: 400 }]
+@UI.identification: [{ position: 400 }]
+@EndUserText.label: 'RCM SGST Rate'
+rcmsgstrate;
+
+@UI.lineItem: [{ position: 410 }]
+@UI.identification: [{ position: 410 }]
+@EndUserText.label: 'RCM UGST Rate'
+rcmugstrate;
+
+@UI.lineItem: [{ position: 420 }]
+@UI.identification: [{ position: 420 }]
+@EndUserText.label: 'IGST Amount'
+igstamt;
+
+@UI.lineItem: [{ position: 430 }]
+@UI.identification: [{ position: 430 }]
+@EndUserText.label: 'CGST Amount'
+cgstamt;
+
+@UI.lineItem: [{ position: 440 }]
+@UI.identification: [{ position: 440 }]
+@EndUserText.label: 'SGST Amount'
+sgstamt;
+
+@UI.lineItem: [{ position: 450 }]
+@UI.identification: [{ position: 450 }]
+@EndUserText.label: 'UGST Amount'
+ugstamt;
+
+@UI.lineItem: [{ position: 460 }]
+@UI.identification: [{ position: 460 }]
+@EndUserText.label: 'RCM IGST Amount'
+rcmigst;
+
+@UI.lineItem: [{ position: 470 }]
+@UI.identification: [{ position: 470 }]
+@EndUserText.label: 'RCM CGST Amount'
+rcmcgst;
+
+@UI.lineItem: [{ position: 480 }]
+@UI.identification: [{ position: 480 }]
+@EndUserText.label: 'RCM SGST Amount'
+rcmsgst;
+
+@UI.lineItem: [{ position: 490 }]
+@UI.identification: [{ position: 490 }]
+@EndUserText.label: 'SGST Value Non-Ded(INR)'
+nondedsgst;
+
+@UI.lineItem: [{ position: 500 }]
+@UI.identification: [{ position: 500 }]
+@EndUserText.label: 'RCM UGST Amount'
+rcmugst;
+
+@UI.lineItem: [{ position: 510 }]
+@UI.identification: [{ position: 510 }]
+@EndUserText.label: 'RCM IGST Value Non-Ded(INR)'
+nondedrcmigst;
+
+@UI.lineItem: [{ position: 520 }]
+@UI.identification: [{ position: 520 }]
+@EndUserText.label: 'RCM CGST Value Non-Ded(INR)'
+nondedrcmcgst;
+
+@UI.lineItem: [{ position: 530 }]
+@UI.identification: [{ position: 530 }]
+@EndUserText.label: 'RCM SGST Value Non-Ded(INR)'
+nondedrcmsgst;
+
+@UI.lineItem: [{ position: 540 }]
+@UI.identification: [{ position: 540 }]
+@EndUserText.label: 'TDS amount'
+tds;
+
+@UI.lineItem: [{ position: 550 }]
+@UI.identification: [{ position: 550 }]
+@EndUserText.label: 'Rounding-off'
+round;
+
+@UI.lineItem: [{ position: 560 }]
+@UI.identification: [{ position: 560 }]
+@EndUserText.label: 'Payment terms'
+PaymentTerms;
+
+@UI.lineItem: [{ position: 570 }]
+@UI.identification: [{ position: 570 }]
+@EndUserText.label: 'Incoterm'
+IncotermsClassification;
+
+@UI.lineItem: [{ position: 580 }]
+@UI.identification: [{ position: 580 }]
+@EndUserText.label: 'HSN Code'
+hsn;
+
+@UI.lineItem: [{ position: 590 }]
+@UI.identification: [{ position: 590 }]
+@EndUserText.label: 'G/L account'
+GLAccount;
+
+@UI.lineItem: [{ position: 600 }]
+@UI.identification: [{ position: 600 }]
+@EndUserText.label: 'Total Taxable Amount(INR)'
+totaltax;
+
+@UI.lineItem: [{ position: 600 }]
+@UI.identification: [{ position: 600 }]
+@EndUserText.label: 'Total Taxable Amount(USD)'
+totaltax1;
+
+@UI.lineItem: [{ position: 610 }]
+@UI.identification: [{ position: 610 }]
+@EndUserText.label: 'Total Tax Amount'
+totaltaxamt;
+
+@UI.lineItem: [{ position: 620 }]
+@UI.identification: [{ position: 620 }]
+@EndUserText.label: 'Net amt(USD)'
+NetUSD;
+
+@UI.lineItem: [{ position: 630 }]
+@UI.identification: [{ position: 630 }]
+@EndUserText.label: 'Total Invoice Amount(USD)'
+invoicegrossamount1;
+
+
+}
